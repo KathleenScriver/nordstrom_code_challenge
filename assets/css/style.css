@@ -1,3 +1,16 @@
 html {
   font-family: 'Lato', sans-serif;
 }
+
+header {
+  background-color: #AA78A6;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  height: 80px;
+}
+
+.title {
+  padding: 20px;
+}
