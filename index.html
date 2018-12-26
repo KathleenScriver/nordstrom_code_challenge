@@ -12,6 +12,21 @@
       <h1>ToDo List</h1>
     </header>
 
+    <section id='all-todos'>
+      <h3>All ToDos</h3>
+    </section>
+
+    <section id='new-todo'>
+      <h3>Add New ToDo</h3>
+      <label for='description'>ToDo (max 250 characters)</label>
+      <input type='text' id='description' name='description' required maxlength='250'>
+      <select name='tags'>
+        <option value='work'>Work</option>
+        <option value='personal'>Personal</option>
+        <option value='hobby'>Hobby</option>
+      </select>
+      <input type='submit'>
+    </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src='assets/javascript/script.js'></script>
