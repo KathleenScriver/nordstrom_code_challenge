@@ -9,7 +9,6 @@ const getAllTodos = async (filter) => {
 }
 
 const displayAllTodos = (allTodos) => {
-  debugger;
   $('.todo-section').html(' ');
   $('#description').val('');
   allTodos.forEach(todo => {
@@ -51,6 +50,5 @@ $('.filter-options button').on('click', (e) => {
   e.preventDefault;
   getAllTodos(e.currentTarget.id);
 })
-$('#date-sort').on('click', sortTodos);
 
 getAllTodos('all');
