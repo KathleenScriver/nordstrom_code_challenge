@@ -1,6 +1,6 @@
-const getAllToDos = async () => {
+const getAllTodos = async () => {
   try {
-    const response = await fetch('dummy_url');
+    const response = await fetch('https://cq31v4skne.execute-api.us-east-2.amazonaws.com/beta/todos');
 
     const body = await response.json();
     displayAllTodos(body);
@@ -13,8 +13,8 @@ const displayAllTodos = (allTodos) => {
   allTodos.forEach(todo => {
     $('#all-todos').append(`
       <tr>
-        <td>${todo.description}</td>
-        <td>${todo.tags}</td>
+        <td>${todo.todoDescription}</td>
+        <td>${todo.tag}</td>
       <tr>
       `)
   });
