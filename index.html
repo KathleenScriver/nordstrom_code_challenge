@@ -16,21 +16,25 @@
       <h3>Add New ToDo</h3>
       <label for='description'>ToDo (max 250 characters)</label>
       <input type='text' id='description' name='description' required maxlength='250'>
-      <select name='tags'>
+      <select name='tag' id='tag'>
         <option value='work'>Work</option>
         <option value='personal'>Personal</option>
         <option value='hobby'>Hobby</option>
       </select>
-      <input type='submit'>
+      <input type='submit' id='submit-todo'>
     </section>
 
     <section id='all-todos' class='content'>
       <h3>All ToDos</h3>
       <table id='todo-list'>
-        <tr>
-          <th class='column-title'>ToDo</th>
-          <th class='column-title'>Tag</th>
-        </tr>
+        <thead>
+          <tr>
+            <th class='column-title'>ToDo</th>
+            <th class='column-title'>Tag</th>
+          </tr>
+        </thead>
+        <tbody class='todo-section'>
+        </tbody>
       </table>
     </section>
 
