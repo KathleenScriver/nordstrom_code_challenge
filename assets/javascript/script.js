@@ -22,7 +22,8 @@ const displayAllTodos = (allTodos) => {
   });
 };
 
-const addNewTodo = async () => {
+const addNewTodo = async (e) => {
+  e.preventDefault;
   const newTodoDesc = $('#description').val();
   const newTodoTag = $('#tag').val();
 
@@ -35,10 +36,10 @@ const addNewTodo = async () => {
         tag: newTodoTag
       })
     });
-    getAllTodos();
   } catch (error) {
     console.log(error.message)
   }
+  getAllTodos('all');
 }
 
 
