@@ -32,9 +32,21 @@ h3 {
   text-align: center;
 }
 
-#all-todos {
+.filter-options {
 
 }
+
+.button {
+  margin: 10px;
+  background-color: #D1B3C4;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  width: 70px;
+  text-align: center;
+  font-size: 14px;
+}
+
 
 #todo-list {
   width: 80%;

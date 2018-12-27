@@ -11,6 +11,7 @@ const getAllTodos = async () => {
 
 const displayAllTodos = (allTodos) => {
   $('.todo-section').html(' ');
+  $('#description').val('');
   allTodos.forEach(todo => {
     $('.todo-section').append(`
       <tr>
