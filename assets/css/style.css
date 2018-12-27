@@ -31,3 +31,22 @@ h3 {
   padding: 10px;
   text-align: center;
 }
+
+#all-todos {
+
+}
+
+#todo-list {
+  width: 80%;
+
+}
+
+#todo-list th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+.column-title {
+  font-size: 18px;
+  font-weight: 800;
+}

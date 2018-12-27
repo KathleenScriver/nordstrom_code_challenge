@@ -11,7 +11,7 @@ const getAllTodos = async () => {
 
 const displayAllTodos = (allTodos) => {
   allTodos.forEach(todo => {
-    $('#all-todos').append(`
+    $('#todo-list').append(`
       <tr>
         <td>${todo.todoDescription}</td>
         <td>${todo.tag}</td>
