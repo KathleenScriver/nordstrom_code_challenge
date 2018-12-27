@@ -32,10 +32,6 @@ h3 {
   text-align: center;
 }
 
-.filter-options {
-
-}
-
 .button {
   margin: 10px;
   background-color: #D1B3C4;
@@ -47,9 +43,9 @@ h3 {
   font-size: 14px;
 }
 
-
 #todo-list {
   width: 80%;
+  text-transform: capitalize;
 }
 
 #todo-list th, td {
