@@ -1,6 +1,6 @@
-const getAllTodos = async () => {
+const getAllTodos = async (filter) => {
   try {
-    const response = await fetch('https://cq31v4skne.execute-api.us-east-2.amazonaws.com/beta/todos');
+    const response = await fetch(`https://cq31v4skne.execute-api.us-east-2.amazonaws.com/beta/todos?searchValue=${filter}`)
 
     const body = await response.json();
     displayAllTodos(body);
@@ -43,7 +43,11 @@ const addNewTodo = async () => {
 
 
 $('#submit-todo').on('click', addNewTodo)
+$('.filter-options button').on('click', (e) => {
+  e.preventDefault;
+  getAllTodos(e.currentTarget.id);
+})
 
 // Get all ToDos on page load
 
-getAllTodos();
+getAllTodos('all');
