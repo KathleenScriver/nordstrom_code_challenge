@@ -49,3 +49,10 @@ Since I cannot provide you access to my AWS account, I have included screenshots
 
 **API Gateway Console**
 <img src='assets/API Gateway Console.png'>
+
+**Lambda Console**
+<img src='assets/LambdaConsole.png'>
+
+<img src='assets/getLambda.png'>
+
+<img src='assets/addLambda.png'>
