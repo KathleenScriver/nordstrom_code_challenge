@@ -44,5 +44,8 @@ The lambda code here was copied and pasted from my AWS Lambda Console and is for
 
 Since I cannot provide you access to my AWS account, I have included screenshots showing the DynamoDB Console, API Gateway Console, and Lambda pages I used.
 
+**DynamoDB Console**
 <img src='assets/DynamoDB Console.png'>
+
+**API Gateway Console**
 <img src='assets/API Gateway Console.png'>
