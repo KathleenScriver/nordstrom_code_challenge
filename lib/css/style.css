@@ -46,11 +46,14 @@ h3 {
 #todo-list {
   width: 80%;
   text-transform: capitalize;
+  margin: 20px;
 }
 
 #todo-list th, td {
   padding: 10px;
   text-align: left;
+  line-height: 22px;
+  width: 50%;
 }
 
 .column-title {
