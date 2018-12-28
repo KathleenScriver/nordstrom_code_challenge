@@ -38,7 +38,7 @@ Currently, the sort by date functionality puts the items in order from least to 
 The lambda code in this repo was copied and pasted from my AWS Lambda Console and is for display purposes only.
 
 ### Live App Usage
-![](assets/nordstromGiphy.gif)
+![](assets/noteTakingApp.gif)
 
 ### AWS Services Used
 
