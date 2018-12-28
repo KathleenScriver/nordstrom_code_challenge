@@ -35,7 +35,7 @@ On the front end, I went with a fairly simple layout and used JQuery to easily m
 
 Currently, the sort by date functionality puts the items in order from least to most recent. In future iterations, I'd rather this be a sort option where no matter which filter you're on (tag), you can have the option to then sort by date.
 
-The lambda code here was copied and pasted from my AWS Lambda Console and is for display purposes only.
+The lambda code in this repo was copied and pasted from my AWS Lambda Console and is for display purposes only.
 
 ### Live App Usage
 ![](assets/nordstromGiphy.gif)
