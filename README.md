@@ -2,12 +2,12 @@
 
 The objective of this code challenge was to create a simple note taking app (ToDo List).
 
-#### Expected Functionality:
+### Expected Functionality:
   - Allow input of new ToDo Item, max of 250 characters, with dropdown menu of tags: work, personal, and hobby.
   - View of all previously created ToDo Items.
   - Ability to filter items by tag and by date.
 
-#### Technology
+### Technology
   **Front End**
   - HTML
   - CSS
@@ -19,11 +19,11 @@ The objective of this code challenge was to create a simple note taking app (ToD
   - AWS Lambda
   - AWS DynamoDB
 
-#### Cloning
+### Cloning
 
   Simply fork and clone this repo and you'll be ready to go!
 
-#### Reflection of Work
+### Reflection of Work
 
 This was my first time accessing AWS and playing around with the tools they offer.  Through the provided tutorials and my own AWS documentation reading, I was able to implement the AWS API Gateway, Lambda functions, and DynamoDB on my back end. This was definitely challenging, but AWS is well documented and there are plenty of resources to comb through.
 
@@ -38,19 +38,27 @@ Currently, the sort by date functionality puts the items in order from least to 
 The lambda code in this repo was copied and pasted from my AWS Lambda Console and is for display purposes only.
 
 ### Live App Usage
+
 ![](assets/noteTakingApp.gif)
+
 
 ### AWS Services Used
 
 Since I cannot provide you access to my AWS account, I have included screenshots showing the DynamoDB Console, API Gateway Console, and Lambda pages I used.
 
+
 **DynamoDB Console**
+
 <img src='assets/DynamoDB Console.png'>
 
+
 **API Gateway Console**
+
 <img src='assets/API Gateway Console.png'>
 
+
 **Lambda Console**
+
 <img src='assets/LambdaConsole.png'>
 
 <img src='assets/getLambda.png'>
