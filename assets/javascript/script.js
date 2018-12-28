@@ -3,14 +3,18 @@ const getAllTodos = async (filter) => {
     const response = await fetch(`https://cq31v4skne.execute-api.us-east-2.amazonaws.com/beta/todos?searchValue=${filter}`)
     const body = await response.json();
     displayAllTodos(body);
-  } catch(error) {
+  } catch (error) {
     console.log(error.message)
   }
 }
 
-const displayAllTodos = (allTodos) => {
+const displayAllTodos = (todoInfo) => {
+  let allTodos = todoInfo
   $('.todo-section').html(' ');
   $('#description').val('');
+  if (document.activeElement.id === 'date-sort') {
+    allTodos = sortByDate(todoInfo);
+  }
   allTodos.forEach(todo => {
     let date = new Date(todo.created)
     $('.todo-section').append(`
@@ -45,10 +49,22 @@ const addNewTodo = async (e) => {
   getAllTodos('all');
 }
 
+const sortByDate = (todos) => {
+  sortedTodos = todos.sort((a,b) => {
+    return (new Date(a.created) - new Date(b.created))
+  })
+  return sortedTodos
+}
+
 $('#submit-todo').on('click', addNewTodo)
-$('.filter-options button').on('click', (e) => {
+$('.filter-options .filter').on('click', (e) => {
   e.preventDefault;
   getAllTodos(e.currentTarget.id);
 })
+
+$('#date-sort').on('click', () => {
+  getAllTodos('all');
+});
+
 
 getAllTodos('all');
