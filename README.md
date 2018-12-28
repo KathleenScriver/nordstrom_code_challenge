@@ -8,9 +8,9 @@ The objective of this code challenge was to create a simple note taking app (ToD
   - Ability to filter items by tag and by date.
 
 #### Technology
-  **Front End***
-  - html
-  - css
+  **Front End**
+  - HTML
+  - CSS
   - ES6
   - JQuery
 
@@ -18,6 +18,10 @@ The objective of this code challenge was to create a simple note taking app (ToD
   - AWS API Gateway
   - AWS Lambda
   - AWS DynamoDB
+
+#### Cloning
+
+  Simply fork and clone this repo and you'll be ready to go!
 
 #### Reflection of Work
 
@@ -31,5 +35,24 @@ On the front end, I went with a fairly simple layout and used JQuery to easily m
 
 Currently, the sort by date functionality puts the items in order from least to most recent. In future iterations, I'd rather this be a sort option where no matter which filter you're on (tag), you can have the option to then sort by date.
 
+The lambda code here was copied and pasted from my AWS Lambda Console and is for display purposes only.
+
 ### Live App Usage
-![](nordstromGiphy.gif)
+![](assets/nordstromGiphy.gif)
+
+### AWS Services Used
+
+Since I cannot provide you access to my AWS account, I have included screenshots showing the DynamoDB Console, API Gateway Console, and Lambda pages I used.
+
+**DynamoDB Console**
+<img src='assets/DynamoDB Console.png'>
+
+**API Gateway Console**
+<img src='assets/API Gateway Console.png'>
+
+**Lambda Console**
+<img src='assets/LambdaConsole.png'>
+
+<img src='assets/getLambda.png'>
+
+<img src='assets/addLambda.png'>
